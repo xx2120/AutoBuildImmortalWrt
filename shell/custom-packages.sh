@@ -55,6 +55,6 @@ CUSTOM_PACKAGES="$CUSTOM_PACKAGES luci-app-diskman luci-i18n-diskman-zh-cn"
  #配置SmartDNS服务
 #CUSTOM_PACKAGES="$CUSTOM_PACKAGES luci-app-smartdns luci-i18n-smartdns-zh-cn"
  #配置wireguard
-CUSTOM_PACKAGES="$CUSTOM_PACKAGES wireguard-tools luci-app-wireguard kmod-wireguard luci-proto-wireguard" 
+CUSTOM_PACKAGES="$CUSTOM_PACKAGES wireguard-tools kmod-wireguard luci-proto-wireguard" 
  #配置其它
 CUSTOM_PACKAGES="$CUSTOM_PACKAGES luci-i18n-upnp-zh-cn kmod-mtd-rw lrzsz htop dmesg drill"
