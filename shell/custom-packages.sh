@@ -50,10 +50,6 @@ CUSTOM_PACKAGES="$CUSTOM_PACKAGES easytier luci-app-easytier"
 CUSTOM_PACKAGES="$CUSTOM_PACKAGES luci-app-ddns luci-i18n-ddns-zh-cn"
 #磁盘管理工具
 CUSTOM_PACKAGES="$CUSTOM_PACKAGES luci-app-diskman luci-i18n-diskman-zh-cn"
-#配置EasyMesh无线网络
-CUSTOM_PACKAGES="$CUSTOM_PACKAGES luci-app-easymesh"
-#关机
-CUSTOM_PACKAGES="$CUSTOM_PACKAGES luci-app-poweroff"
 #释放系统内存
 CUSTOM_PACKAGES="$CUSTOM_PACKAGES luci-app-ramfree"
  #配置SmartDNS服务
@@ -61,4 +57,4 @@ CUSTOM_PACKAGES="$CUSTOM_PACKAGES luci-app-smartdns luci-i18n-smartdns-zh-cn"
  #配置wireguard
 CUSTOM_PACKAGES="$CUSTOM_PACKAGES wireguard-tools kmod-wireguard luci-proto-wireguard" 
  #配置其它
-CUSTOM_PACKAGES="$CUSTOM_PACKAGES luci-i18n-upnp-zh-cn kmod-mtd-rw lrzsz"
+CUSTOM_PACKAGES="$CUSTOM_PACKAGES luci-i18n-upnp-zh-cn kmod-mtd-rw lrzsz htop dmesg drill"
