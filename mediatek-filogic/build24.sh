@@ -32,7 +32,7 @@ mkdir -p  /home/build/immortalwrt/files/etc/config
 
 
 # yml 传入的固件大小 ROOTFS_PARTSIZE
-echo "Building for ROOTFS_PARTSIZE: $ROOTFS_PARTSIZE"
+echo "编译固件大小为: $PROFILE MB"
 
 # 创建pppoe配置文件 yml传入pppoe变量————>pppoe-settings文件
 cat << EOF > /home/build/immortalwrt/files/etc/config/pppoe-settings
@@ -102,7 +102,7 @@ fi
 echo "$(date '+%Y-%m-%d %H:%M:%S') - Building image with the following packages:"
 echo "$PACKAGES"
 
-make image PROFILE=$PROFILE PACKAGES="$PACKAGES" FILES="/home/build/immortalwrt/files" ROOTFS_PARTSIZE=$ROOTFS_PARTSIZE
+make image PROFILE=$PROFILE PACKAGES="$PACKAGES" FILES="/home/build/immortalwrt/files" ROOTFS_PARTSIZE=$PROFILE
 
 if [ $? -ne 0 ]; then
     echo "$(date '+%Y-%m-%d %H:%M:%S') - Error: Build failed!"
