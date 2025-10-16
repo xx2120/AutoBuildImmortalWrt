@@ -567,6 +567,7 @@ jobs:
           profile="${{ github.event.inputs.profile }}"
           echo "Building for profile: $profile"
           include_docker="${{ github.event.inputs.include_docker }}"
+          rootfs_partsize="${{ github.event.inputs.rootfs_partsize }}"
           # 默认平台
           echo "platform=mediatek/filogic" >> $GITHUB_ENV
 
