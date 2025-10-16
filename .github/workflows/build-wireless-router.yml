@@ -503,6 +503,10 @@ on:
         options:
           - 'yes'
           - 'no'
+      rootfs_partsize:
+        description: '设置软件包大小 单位(MB) 最大数值10240'
+        required: true
+        default: '1024'
       enable_pppoe:
         description: "是否配置PPPoE拨号信息?"
         required: true
@@ -648,6 +652,7 @@ jobs:
               -v "${{ github.workspace }}/mediatek-filogic/build24.sh:/home/build/immortalwrt/build.sh" \
               -e PROFILE=$profile \
               -e INCLUDE_DOCKER=$include_docker \
+              -e ROOTFS_PARTSIZE=${{ inputs.rootfs_partsize }} \
               -e ENABLE_PPPOE=${{ inputs.enable_pppoe }} \
               -e PPPOE_ACCOUNT=${{ inputs.pppoe_account }} \
               -e PPPOE_PASSWORD=${{ inputs.pppoe_password }} \
